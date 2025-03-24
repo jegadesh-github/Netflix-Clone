@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+* a{
+    color: white;
+    text-decoration: none;
+}
+body{
+    background-color: black;
+}
+.mainNetflixContainer{
+   /* border: 2px solid red; */
+    position: relative; 
+}
+.backgroundContainer{
+    background-image:url(./NetflixLogo/BannerImage.jpg);
+    filter: blur(16px);
+    height: 100vh;
+    position: relative;
+}
+.pinkoverlay{
+    background-color: rgba(231, 135, 151, 0.447);
+    height: 100%;
+    width: 100%;
+}
+.contentContainer{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    padding:0rem 2rem;
+}
+.navContainer{
+    /* border: 2px solid green; */
+    height:20vh;
+    position: fixed;
+    z-index: 10000;
+}
+.upperNavBarSection{
+    /* border:2px solid blue; */
+    display: flex;
+    height: 50%;
+}
+.upperNavbarLeftSection{
+    /* border:2px solid red; */
+    width: 50%;
+}
+.netflixLogo{
+    width:29%;
+}
+
+.upperNavbarRightSection{
+    /* border: 2px solid green; */
+    width: 50%;
+}
+.navBArButtonContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+.Languagebutton{
+    display: flex;
+    padding: .4rem .5rem;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+.signInButton{
+    background-color: #ffff;
+    padding: .4rem .8rem;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    font-size: 1rem;
+}
+.Languagebutton p{
+    margin-left:5px;
+}
+.lowerNavBarSection{
+    /* border: 2px solid red; */
+    height: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.menuList{
+    /* border: 2px solid green; */
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    height: 7vh;
+}
+.menuList li{
+    /* border: 2px solid red; */
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+.sectioncontainer{
+    margin-top: 20vh;
+}
+.bannerSection{
+    /* border: 2px solid red; */
+    height: 90vh;
+    background-image: url(./NetflixLogo/BannerImage.jpg);
+    background-size: 100% 100%;
+    border-radius: 20px;
+    position: relative;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7),black);
+    border-radius: 20px;
+   
+}
+.bannerContainer{
+    /* border: 2px solid red; */
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bannerContainer h2{
+    font-size: 4rem;
+    /* border: 2px solid green; */
+    width: 50%;
+    text-align: center;
+}
+.bannerContainer h4{
+    font-size: 1.5rem;
+    margin: 20px;
+}
+.bannerContainer p{
+    font-size: 1rem;
+    margin: 20px;
+}
+.inputContainer{
+    /* border:2px solid green; */
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.emailinputbox{
+    padding:1rem 2rem;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color:rgba(255, 255, 255, 0.112);
+    width: 60%;
+    font-size: 1rem;
+}
+.emailinputbox::placeholder{
+    color: rgba(255, 255, 255, 0.736);
+}
+.getStartedButton{
+    padding: 1rem 2rem;
+    background-color: red;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    width: 30%;
+    color: white;
+    font-size:1rem; 
+}
+.carouselSection,.planSection,.reasonToJoinSection,.faqSection,.getStartedSection{
+    /* border: 2px solid red; */
+    color:white;
+}
+.carouselSection h2,.planSection h2,.reasonToJoinSection h2,.faqSection h2{
+    /* border: 2px solid red; */
+    margin-left: 5rem;
+    font-size: 2.2rem;
+}
+.carouselcardcontainer,.plansContainer,.reasonContainer,.faqCardContainer{
+    /* border:2px solid green; */
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin:2rem auto;
+}
+.carouselcard{
+    width: 12%;
+    /* border: 2px solid yellow; */
+    border-radius: 20px;
+    height: 35vh;
+    position: relative;
+}
+.carouselNumberContainer{
+    /* border: 2px solid red; */
+    position: absolute;
+    left: -10px;
+}
+.carouselNumberContainer span{
+    color: rgba(0,0,0,0.8);
+    -webkit-text-stroke: 0.125rem rgb(255,255,255);
+    text-shadow: 0 0 1.5rem rgba(0,0,0,0.5);
+    font-size: 4rem;
+}
+.carouselImageContainer{
+    width: 100%;
+    height: 100%;
+}
+.carouselImageContainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.plancard,.reasoncard{
+    border: 2px solid green;
+    border-radius: 20px;
+    height: 33vh;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.451);
+}
+.plancard1{
+    background: linear-gradient(149deg,#0f1d32 6.96%,#172B47 40.17%,#120c1f 73.39%);
+}
+.plancard2{
+    background: linear-gradient(149deg,#1D529D 6.96%,#233371 40.17%,#120c1f 73.39%);
+}
+.plancard3{
+    background: linear-gradient(149deg,#792A95 6.96%,#38246c 40.17%,#3f1747 73.39%);
+}
+.plancard4{
+    background: linear-gradient(149deg,#d135c9 6.96%,#95265a 40.17%,#541055 73.39%);
+}
+.plancard h2{
+    margin-left: 0;
+    font-size: 1.5rem;
+}
+.plancard h4{
+    font-size: 1.3rem;
+}
+.plancard p{
+    font-size: 1rem;
+}
+.reasoncard{
+    background: rgb(68, 62, 62);
+    border: none;
+    height: 28vh;
+}
+.reasoncard h2{
+    font-size: 1.5rem;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+.reasoncard p{
+    font-size: 0.9rem;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+.reasonCardLowerContent{
+    display: flex;
+    justify-content: flex-end;
+}
+.reasonCardLowerContent svg{
+    height: 50px;
+    width: 50px; 
+}
+.faqCard{
+    /* border: 2px solid red; */
+    width: 100%;
+    height:20%;
+}
+.faqQuestion,.faqAnswer{
+    padding: 2rem;
+    border-radius: 10px;
+    background: rgb(68, 62, 62);
+    /* border: 1px solid white; */
+    margin-bottom:5px;
+}
+.faqQuestion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;                                
+}
+.faqQuestion span{
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.faqAnswer{
+    display: none;
+}
+.faqCard:hover{
+    cursor: pointer;
+}
+.faqQuestion:hover + .faqAnswer{
+    display: block;
+}
+.getStartedSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.getStartedSection p{
+    margin-bottom: 1rem;
+}
