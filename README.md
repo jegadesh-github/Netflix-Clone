@@ -1,9 +1,6 @@
 🎬 Netflix Clone – HTML & CSS
 A responsive front-end replica of the Netflix homepage, crafted using pure HTML and CSS. This project emulates the visual aesthetics of Netflix's user interface, serving as a practice in modern web design and layout techniques.
 
-🛠️ Features
-Responsive Design: Adapts seamlessly to various screen sizes, including desktops, tablets, and mobile devices.
-
 Navigation Bar: Mimics Netflix's top navigation with logo and menu items.
 
 Hero Section: Features a prominent banner area with call-to-action buttons.
